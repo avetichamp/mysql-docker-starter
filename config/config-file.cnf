@@ -1,0 +1,8 @@
+[mysqld]
+max_connections=250
+
+# Accept connections from any IP address
+bind-address        = 0.0.0.0
+
+# Query Cache Configuration
+max_allowed_packet=32M

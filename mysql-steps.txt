@@ -1,0 +1,27 @@
+
+
+1. Go to https://hub.docker.com/_/mysql and pull mysql image
+	docker pull mysql:8.0.27
+
+
+
+2. Run mysql in docker
+	docker run --name mysql-docker -p 3306:3306 -e MYSQL_ROOT_PASSWORD=mypassword -d mysql:8.0.27
+
+
+3. Check mysql logs in docker container
+	docker logs mysql-docker -f
+
+
+4. Connect to mysql within the docker container
+	docker exec -it mysql-docker bash
+    mysql -uroot -p	
+
+
+5. Connect to mysql from local mysql client
+	--install mysql client	
+	 sudo apt-get install mysql-client
+
+	--connect to mysql
+	 mysql -uroot -h0.0.0.0 -p
+
