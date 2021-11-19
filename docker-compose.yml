@@ -18,4 +18,4 @@ services:
       - '3306'
     volumes:  
       - ./data/db:/var/lib/mysql
-      - /home/pi/workspaces/tutorial/mysql-docker/config:/etc/mysql/conf.d   
+      - ./config:/etc/mysql/conf.d   
